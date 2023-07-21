@@ -31,6 +31,10 @@ find "$ROOT_DIR/images/train" -name "*.jpg" -exec mv -t "$ROOT_DIR/images/train"
 echo "Moving validation images..."
 find "$ROOT_DIR/images/val" -name "*.jpg" -exec mv -t "$ROOT_DIR/images/val" {} +
 
+echo "Removing empty directories..."
+find "$ROOT_DIR/images/train" -type d -empty -delete
+find "$ROOT_DIR/images/val" -type d -empty -delete
+
 num_train=$(find "$ROOT_DIR/images/train" -type f -name "*.jpg" | wc -l)
 num_val=$(find "$ROOT_DIR/images/val" -type f -name "*.jpg" | wc -l)
 
