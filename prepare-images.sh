@@ -16,12 +16,12 @@ echo "Downloading validation images..."
 wget -i images-val.txt -P "$ROOT_DIR/images-temp/val"
 
 echo "Extracting train images..."
-for file in "$ROOT_DIR/images-temp/train/*.tar.gz"; do
+for file in "$ROOT_DIR/images-temp/train"/*.tar.gz; do
     tar -xzf "$file" -C "$ROOT_DIR/images/train"
 done
 
 echo "Extracting validation images..."
-for file in "$ROOT_DIR/images-temp/val/*.tar.gz"; do
+for file in "$ROOT_DIR/images-temp/val"/*.tar.gz; do
     tar -xzf "$file" -C "$ROOT_DIR/images/val"
 done
 
