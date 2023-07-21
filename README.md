@@ -32,4 +32,4 @@ After running the script, it will display the number and size of downloaded imag
 
 The Object365 dataset is a collection of images containing various objects and scenes. It is useful for training object detection models and testing computer vision algorithms.
 
-For more information about the dataset, please visit the official Object365 website [here](https://object365.github.io/).
+For more information about the dataset, please visit the official Object365 website [here](https://www.objects365.org/).
