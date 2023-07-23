@@ -58,8 +58,8 @@ num_val=$(find "$ROOT_DIR/images/val" -type f -name "*.jpg" | wc -l)
 size_train=$(du -sh "$ROOT_DIR/images/train" | cut -f 1)
 size_val=$(du -sh "$ROOT_DIR/images/val" | cut -f 1)
 
-echo "Downloaded $num_train train images. Total size: $size_train"
-echo "Downloaded $num_val val images. Total size: $size_val"
+echo "Downloaded and extracted $num_train train images. Total size: $size_train"
+echo "Downloaded and extracted $num_val val images. Total size: $size_val"
 
 if [ "$remove_temp" == "y" ] || [ "$remove_temp" == "Y" ]; then
     echo "Deleting the temporary directories..."
