@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# CHANGE THE FOLLOWING PATH
 ROOT_DIR=""
 
 read -p "Do you want to delete the temporary files after extraction? (y/n): " remove_temp
