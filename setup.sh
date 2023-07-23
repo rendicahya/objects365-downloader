@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ROOT_DIR="/home/randy/datasets/objects365"
+ROOT_DIR=""
 
 read -p "Do you want to delete the temporary files after extraction? (y/n): " remove_temp
 
