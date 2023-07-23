@@ -17,7 +17,7 @@ Before running the script, you need to have wget installed on your system:
 
 3. Modify the script:
    - Open the `setup.sh` file in a text editor.
-   - Replace `/path/to/root/directory` in the script with the desired path where you want to store the dataset. This will be the root directory for all the files.
+   - Change the `ROOT_DIR` variable in the script with the desired path where you want to store the dataset. This will be the root directory for all the files.
 
 4. Make the script executable:
 `chmod +x setup.sh`
