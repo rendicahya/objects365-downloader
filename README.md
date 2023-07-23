@@ -19,14 +19,12 @@ Before running the script, you need to have wget installed on your system:
    - Open the `setup.sh` file in a text editor.
    - Change the `ROOT_DIR` variable in the script with the desired path where you want to store the dataset. This will be the root directory for all the files.
 
-4. Make the script executable:
-`chmod +x setup.sh`
+4. Make the script executable: `chmod +x setup.sh`
 
-5. Run the script:
-`./setup.sh`
+5. Run the script: `./setup.sh`. It will prompt you to choose whether to delete the temporary files used during the process. If you have limited storage, you should answer yes.
 
 6. Check the output:
-After running the script, it will display the number and size of downloaded images for both training and validation sets. Additionally, it will prompt you to choose whether to delete the temporary directories used during the process.
+After running the script, it will display the number and size of downloaded images for both training and validation sets.
 
 ## Dataset Information
 
