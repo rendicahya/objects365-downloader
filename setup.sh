@@ -67,11 +67,11 @@ find "$ROOT_DIR/images/val" -type d -empty -delete
 echo "  Done."
 
 echo "Extracting train labels..."
-unzip labels-train.zip -d labels
+unzip -qq labels-train.zip -d labels
 echo "  Done."
 
 echo "Extracting validation labels..."
-unzip labels-val.zip -d labels
+unzip -qq labels-val.zip -d labels
 echo "  Done."
 
 echo "Counting train images..."
