@@ -9,6 +9,10 @@ else
     exit 1
 fi
 
+if [ ! -d "$ROOT_DIR" ]; then
+    mkdir -p "$ROOT_DIR"
+fi
+
 read -p "Do you want to delete the temporary files after each extraction? (y/n): " remove_temp
 
 echo "Creating the directory structure..."
