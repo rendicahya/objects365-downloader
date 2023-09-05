@@ -21,14 +21,6 @@ echo "Downloading validation images..."
 wget -c -i images-val.txt -P "$ROOT_DIR/images-temp/val"
 echo "  Done"
 
-echo "Downloading train labels..."
-wget -c "https://www.dropbox.com/scl/fi/bxo7k6166fq4kanalfxsj/labels-train.zip?rlkey=hwoqlmxvwaps9nvbsqi0xac1p&dl=1" -O labels-train.zip
-echo "  Done"
-
-echo "Downloading validation labels..."
-wget -c "https://www.dropbox.com/scl/fi/54xt61doa032rw7oweajx/labels-val.zip?rlkey=xxm13uc6yqxynpez9abtishke&dl=1" -O labels-val.zip
-echo "  Done"
-
 echo "Extracting train images..."
 for file in "$ROOT_DIR/images-temp/train"/*.tar.gz; do
     echo "  Extracting $file"
