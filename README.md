@@ -20,18 +20,14 @@ git clone https://github.com/rendicahya/objects365.git
 cd objects365
 ```
 
-3. Modify the script:
-   - Open the `setup.sh` file in a text editor.
-   - Change the `ROOT_DIR` variable in the script with the desired path where you want to store the dataset. This will be the root directory for all the files.
-
-4. Make the script executable:
+3. Make the script executable:
 ```bash
 chmod +x setup.sh
 ```
 
-5. Run the script:
+4. Run the script:
 ```bash
-./setup.sh
+./setup.sh path/to/download/directory
 ```
 It will prompt you to choose whether to delete the temporary files used during the process. It is recommended if you have limited storage.
 
