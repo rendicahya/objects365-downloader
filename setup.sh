@@ -53,6 +53,14 @@ echo "Setting up validation images..."
 find "$ROOT_DIR/images/val" -name "*.jpg" -exec mv -t "$ROOT_DIR/images/val" {} +
 echo "  Done."
 
+echo "Downloading train labels..."
+wget -c "https://github.com/rendicahya/objects365/raw/main/labels-train.zip" -O labels-train.zip
+echo "  Done"
+
+echo "Downloading validation labels..."
+wget -c "https://github.com/rendicahya/objects365/raw/main/labels-val.zip" -O labels-val.zip
+echo "  Done"
+
 echo "Removing empty directories..."
 find "$ROOT_DIR/images/train" -type d -empty -delete
 find "$ROOT_DIR/images/val" -type d -empty -delete
