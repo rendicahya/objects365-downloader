@@ -6,7 +6,7 @@ This repository contains a bash script for downloading and setting up the Object
 
 ## Prerequisites
 
-Before running the script, you need to have wget and [Git LFS](https://git-lfs.com/) installed on your system.
+Before running the script, you need to have wget installed on your system.
 
 ## Usage
 
