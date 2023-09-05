@@ -1,7 +1,13 @@
 #!/bin/bash
 
-# CHANGE THE FOLLOWING PATH
 ROOT_DIR=""
+
+if [ $# -eq 1 ]; then
+    ROOT_DIR="$1"
+else
+    echo "Usage: $0 <download_directory>"
+    exit 1
+fi
 
 read -p "Do you want to delete the temporary files after each extraction? (y/n): " remove_temp
 
