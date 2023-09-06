@@ -22,6 +22,7 @@ mkdir -p "$ROOT_DIR/images/val"
 mkdir -p "$ROOT_DIR/images-temp/train"
 mkdir -p "$ROOT_DIR/images-temp/val"
 mkdir -p "$ROOT_DIR/labels"
+echo "  Done"
 
 echo "Downloading train images..."
 wget -c -i images-train.txt -P "$ROOT_DIR/images-temp/train"
