@@ -64,11 +64,11 @@ find "$ROOT_DIR/images/val" -name "*.jpg" -exec mv -t "$ROOT_DIR/images/val" {} 
 echo "  Done."
 
 echo "Downloading train labels..."
-wget -c "https://github.com/rendicahya/objects365/raw/main/labels-train.zip" -O labels-train.zip
+wget -c "https://www.dropbox.com/scl/fi/bxo7k6166fq4kanalfxsj/labels-train.zip?rlkey=hwoqlmxvwaps9nvbsqi0xac1p&dl=1" -O labels-train.zip
 echo "  Done"
 
 echo "Downloading validation labels..."
-wget -c "https://github.com/rendicahya/objects365/raw/main/labels-val.zip" -O labels-val.zip
+wget -c "https://www.dropbox.com/scl/fi/54xt61doa032rw7oweajx/labels-val.zip?rlkey=xxm13uc6yqxynpez9abtishke&dl=1" -O labels-val.zip
 echo "  Done"
 
 echo "Removing empty directories..."
