@@ -29,9 +29,7 @@ chmod +x setup.sh
 ```bash
 ./setup.sh path/to/download/directory
 ```
-It will prompt you to choose whether to delete the temporary files used during the process. It is recommended if you have limited storage.
-
-6. After running the script, it will display the number and size of downloaded images for both training and validation sets.
+It will prompt you to choose whether to delete the temporary files used during the process. It is recommended if you have limited storage. After running the script, it will display the number and size of downloaded images for both training and validation sets.
 
 ## Dataset Information
 
